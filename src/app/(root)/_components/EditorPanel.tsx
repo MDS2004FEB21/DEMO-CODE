@@ -168,8 +168,8 @@ function EditorPanel() {
 
   useEffect(() => {
     const savedCode = localStorage.getItem(`editor-code-${language}`);
-    const newCode = savedCode || LANGUAGE_CONFIG[language].defaultCode;
-    if (editor) editor.setValue(newCode);
+    const Code = savedCode || LANGUAGE_CONFIG[language].defaultCode;
+    if (editor) editor.setValue(code);
   }, [language, editor]);
 
   useEffect(() => {
